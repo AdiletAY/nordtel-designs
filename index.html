@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Арасан — 3 варианта дизайна</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0a0a0a;
+            color: #ffffff;
+            min-height: 100vh;
+            padding: 60px 24px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: #888;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .designs-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+        }
+
+        .design-card {
+            background: #141414;
+            border: 1px solid #2a2a2a;
+            border-radius: 16px;
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+
+        .design-card:hover {
+            border-color: #d4a853;
+            transform: translateY(-8px);
+        }
+
+        .design-preview {
+            aspect-ratio: 4/3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 64px;
+            position: relative;
+        }
+
+        .design-1 .design-preview {
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+        }
+
+        .design-2 .design-preview {
+            background: linear-gradient(135deg, #fafafa 0%, #e5e5e5 100%);
+        }
+
+        .design-3 .design-preview {
+            background: linear-gradient(135deg, #f5f0e8 0%, #d4c9b8 100%);
+        }
+
+        .design-badge {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            padding: 6px 12px;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 4px;
+        }
+
+        .design-1 .design-badge {
+            background: #d4a853;
+            color: #0a0a0a;
+        }
+
+        .design-2 .design-badge {
+            background: #2d5a27;
+            color: white;
+        }
+
+        .design-3 .design-badge {
+            background: #5c4a32;
+            color: white;
+        }
+
+        .design-info {
+            padding: 24px;
+        }
+
+        .design-info h2 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .design-info p {
+            font-size: 14px;
+            color: #888;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .design-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .tag {
+            padding: 4px 10px;
+            background: #2a2a2a;
+            border-radius: 4px;
+            font-size: 12px;
+            color: #aaa;
+        }
+
+        .btn-view {
+            display: block;
+            width: 100%;
+            padding: 14px;
+            background: #d4a853;
+            color: #0a0a0a;
+            text-decoration: none;
+            text-align: center;
+            font-weight: 600;
+            font-size: 14px;
+            border-radius: 8px;
+            transition: background 0.2s;
+        }
+
+        .btn-view:hover {
+            background: #e8c97a;
+        }
+
+        @media (max-width: 1024px) {
+            .designs-grid {
+                grid-template-columns: 1fr;
+                max-width: 500px;
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>3 варианта дизайна</h1>
+            <p class="subtitle">Выберите понравившийся дизайн для лендинга пивной компании «Арасан»</p>
+        </header>
+
+        <div class="designs-grid">
+            <div class="design-card design-1">
+                <div class="design-preview">
+                    <span class="design-badge">Вариант 1</span>
+                    🍺
+                </div>
+                <div class="design-info">
+                    <h2>Dark & Premium</h2>
+                    <p>Тёмный фон с золотыми акцентами. Премиальный, изысканный стиль.</p>
+                    <div class="design-tags">
+                        <span class="tag">Тёмная тема</span>
+                        <span class="tag">Золото</span>
+                        <span class="tag">Premium</span>
+                    </div>
+                    <a href="design-1/index.html" class="btn-view">Посмотреть →</a>
+                </div>
+            </div>
+
+            <div class="design-card design-2">
+                <div class="design-preview">
+                    <span class="design-badge">Вариант 2</span>
+                    🌿
+                </div>
+                <div class="design-info">
+                    <h2>Light & Fresh</h2>
+                    <p>Светлый, чистый дизайн с зелёными и янтарными акцентами. Современный и свежий.</p>
+                    <div class="design-tags">
+                        <span class="tag">Светлая тема</span>
+                        <span class="tag">Зелёный</span>
+                        <span class="tag">Минимализм</span>
+                    </div>
+                    <a href="design-2/index.html" class="btn-view">Посмотреть →</a>
+                </div>
+            </div>
+
+            <div class="design-card design-3">
+                <div class="design-preview">
+                    <span class="design-badge">Вариант 3</span>
+                    🌾
+                </div>
+                <div class="design-info">
+                    <h2>Rustic & Craft</h2>
+                    <p>Тёплые коричневые тона, крафтовая эстетика. Традиционный, уютный стиль.</p>
+                    <div class="design-tags">
+                        <span class="tag">Крафт</span>
+                        <span class="tag">Коричневый</span>
+                        <span class="tag">Традиции</span>
+                    </div>
+                    <a href="design-3/index.html" class="btn-view">Посмотреть →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
