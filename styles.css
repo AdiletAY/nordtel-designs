@@ -255,11 +255,8 @@ body {
     }
 }
 
-
-
-
 .hero-content {
-    transform: translateX(-10%);
+    transform: translateX(-20%);
     position: relative;
     max-width: 700px;
 }
@@ -305,7 +302,7 @@ body {
 
 
 .hero-stats {
-    transform: translateX(-10%);
+    transform: translateX(-20%);
     display: flex;
     gap: 48px;
     margin-top: 80px;
