@@ -1,187 +1,174 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Живое пиво от производителя | Арасан</title>
+    <title>Арасан | Живое пиво от производителя</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header class="header">
         <div class="container">
             <nav class="nav">
-                <a href="#" class="logo">
-                    <span class="logo-icon">🍺</span>
-                    <span class="logo-text">NordTel</span>
-                </a>
+                <a href="#" class="logo">NordTel</a>
                 <ul class="nav-links">
-                    <li><a href="#about">О нас</a></li>
-                    <li><a href="tel:+77000000000" class="btn-nav">Связаться</a></li>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#about-company">О компании</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
                 </ul>
+                <a href="tel:+77759264291" class="btn btn-primary">Свяжитесь с нами</a>
             </nav>
         </div>
     </header>
 
     <section class="hero">
-        <div class="hero-bg"></div>
-        <div class="container">
-            <div class="hero-content">
-                <span class="hero-badge">Эксклюзивный дистрибьютор</span>
-                <h1>Живое пиво<br><span class="highlight">от производителя</span></h1>
-                <p class="hero-subtitle">Оптовая торгово-дистрибьюторская компания, специализирующаяся на продаже разливного и бутылочного пива, а также газированной безалкогольной продукции.</p>
-            </div>
-            <div class="hero-stats">
-                <div class="stat">
-                    <span class="stat-number">50+</span>
-                    <span class="stat-label">лет традиций</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number">14+</span>
-                    <span class="stat-label">сортов пива</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number">100%</span>
-                    <span class="stat-label">натуральное</span>
+        <div class="hero-overlay"></div>
+        <div class="container hero-container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="hero-tag">
+                        <span class="tag-dot"></span>
+                        Эксклюзивный дистрибьютор
+                    </div>
+                    <h1>Живое пиво от производителя</h1>
+                    <p>Оптовая торгово-дистрибьюторская компания, специализирующаяся на продаже разливного и бутылочного
+                        пива, а также газированной безалкогольной продукции.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="contacts">
+    <section class="about-company" id="about-company">
         <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <span class="section-label">Почему мы</span>
+                    <h2>NordTel</h2>
+                    <p class="lead">NordTel — оптовая торгово-дистрибьюторская компания, специализирующаяся на продаже
+                        разливного и бутылочного пива, а также газированной безалкогольной продукции.</p>
+                    <p>Мы работаем с продовольственными и специализированными магазинами, пивными маркетами, а также с
+                        сегментом HoReCa — барами и ресторанами. </p>
+                    <p>Обеспечиваем стабильные поставки, понятные условия сотрудничества и профессиональную поддержку на
+                        всех этапах работы.</p>
+                </div>
+
+                <div class="about-card">
+                    <div class="card-image">
+                        <img src="images/logo.svg" 
+                            alt="Пивоварня" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacts" id="contacts">
+        <div class="container">
+            <div class="contacts-header">
+                <div class="contacts-text">
+                    <span class="section-label">Контакты</span>
+                    <h2>Свяжитесь с нами</h2>
+                </div>
+                <a href="https://2gis.kz/astana/geo/70000001106094403" target="_blank"
+                class="btn btn-outline">Посмотреть на карте →</a>
+            </div>
+
             <div class="contacts-grid">
-                <div class="contacts-info">
-                    <span class="section-badge">Контакты</span>
-                    <h2>Свяжитесь с NordTel</h2>
+                <!-- Адрес -->
+                <div class="contact-card">
+                    <div class="contact-top">
+                        <span class="contact-type">Адрес</span>
+                        <img src="images/map-pinned.svg" alt="на карте" class="contact-icon">
+                    </div>
+                    <h3>г. Астана</h3>
+                    <a href="https://2gis.kz/astana/geo/70000001106094403" target="_blank" class="contact-link">
+                        пер. Талапкерский 26/1
+                    </a>
+                </div>
 
-                    <p class="contacts-text">
-                        Мы работаем с магазинами, пивными маркетами, барами и ресторанами.
-                        Готовы обсудить условия сотрудничества и поставок.
-                    </p>
+                <!-- Телефон -->
+                <div class="contact-card">
+                    <div class="contact-top">
+                        <span class="contact-type">Телефон</span>
+                        <img src="images/phone.svg" alt="телефон" class="contact-icon">
+                    </div>
+                    <h3>Звонки</h3>
+                    <a href="tel:+77759264291" class="contact-link">+7 775 926 4291</a>
+                </div>
 
-                    <div class="contacts-row">
-                        <div class="contact-item">
-                            <span class="contact-label">График работы</span>
-                            <span class="contact-value schedule">
-                            <span class="schedule-row">
-                                <span class="schedule-day">Пн–Пт</span>
-                                <span class="schedule-time">9:00 – 17:00</span>
-                            </span>
-                            <span class="schedule-row">
-                                <span class="schedule-day">Сб</span>
-                                <span class="schedule-time">9:00 – 14:00</span>
-                            </span>
-                        </span>
-                        </div>
-
-                        <div class="contact-item">
-                            <span class="contact-label">Адрес</span>
-                            <span class="contact-value">
-                                г. Астана
-                            </span>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <span class="contact-label">Телефон</span>
-                            <a href="tel:+77000000000" class="contact-value contact-phone">
-                                +7 (700) 000-00-00
-                            </a>
-                            <a href="https://2gis.kz/astana/geo/70000001106094403"
-                                target="_blank"
-                                class="contact-link">
-                                    Мы на карте 2GIS
-                            </a>
-                        </div>
+                <!-- График -->
+                <div class="contact-card">
+                    <div class="contact-top">
+                        <span class="contact-type">График</span>
+                        <img src="images/alarm-clock.svg" alt="телефон" class="contact-icon">
+                    </div>
+                    <h3>График работы</h3>
+                    <div class="worktime">
+                        <span>Пн–Пт</span>
+                        <span>9:00 – 17:00</span>
+                        <span>Сб</span>
+                        <span>9:00 – 14:00</span>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <section class="about-company" id="about">
-        <div class="container">
-            <span class="section-badge">NordTel</span>
-            <h2>Оптово-дистрибьюторская компания</h2>
-
-            <p class="about-text">
-                <strong>NordTel</strong> — оптовая торгово-дистрибьюторская компания,
-                специализирующаяся на продаже разливного и бутылочного пива,
-                а также газированной безалкогольной продукции.
-            </p>
-
-            <p class="about-text">
-                Мы работаем с продовольственными и специализированными магазинами,
-                пивными маркетами, а также с сегментом <strong>HoReCa</strong> —
-                барами и ресторанами.
-            </p>
-
-            <p class="about-text">
-                NordTel является <strong>эксклюзивным дистрибьютором пивоваренного завода «Арасан»</strong>
-                (Казахстан, г. Рудный), предлагая продукцию напрямую от производителя
-                с гарантией качества и свежести.
-            </p>
-
-            <p class="about-text">
-                Мы обеспечиваем стабильные поставки, прозрачные условия сотрудничества
-                и профессиональную поддержку на всех этапах работы.
-            </p>
-
-            <div class="about-features">
-                <div class="feature">
-                    <span class="feature-icon">🤝</span>
-                    <div>
-                        <h4>Партнёрский подход</h4>
-                        <p>Ориентируемся на рост продаж клиента</p>
+                <!-- Карта -->
+                <div class="contact-card contact-card-map">
+                    <a href="https://2gis.kz/astana/geo/70000001106094403" target="_blank" class="card-link"></a>
+                    <div class="contact-top">
+                        <span class="contact-type">Карта</span>
+                        <img src="images/map-pinned.svg" alt="на карте" class="contact-icon">
                     </div>
-                </div>
-                <div class="feature">
-                    <span class="feature-icon">📦</span>
-                    <div>
-                        <h4>Стабильные поставки</h4>
-                        <p>Надёжная логистика и наличие продукции</p>
-                    </div>
-                </div>
-                <div class="feature">
-                    <span class="feature-icon">🎓</span>
-                    <div>
-                        <h4>Сильная команда</h4>
-                        <p>Регулярное обучение и бизнес-тренинги</p>
-                    </div>
+                    <h3>Мы на карте</h3>
+                    <p>Открыть в 2GIS →</p>
                 </div>
             </div>
         </div>
     </section>
 
 
-    <footer class="footer" id="contact">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <span class="logo-text">NordTel</span>
-                    <p>Эксклюзивный дистрибьютор пивоваренного завода <br>"Арасан" (Казахстан г. Рудный)</p>
+
+    <footer class="site-footer">
+    <div class="container">
+        <div class="footer-main">
+            <!-- Бренд -->
+            <div class="footer-brand">
+                <a href="#" class="logo">NordTel</a>
+                <p>Оптовая торгово-дистрибьюторская компания, специализирующаяся на продаже разливного и бутылочного пива.</p>
+            </div>
+
+            <!-- Навигация и контакты -->
+            <div class="footer-columns">
+                <div class="footer-col">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#about-company">О компании</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </ul>
                 </div>
-                <div class="footer-links"></div>
-                <div class="footer-contact">
+                <div class="footer-col">
                     <h4>Контакты</h4>
-                    <p><strong>NordTel</strong></p>
-                    <p>г. Астана</p>
-                    <p>Пн–Пт: 9:00 – 17:00</p>
-                    <p>Сб: 9:00 – 14:00</p>
-                    <p>
-                       <a href="https://2gis.kz/astana/geo/70000001106094403"
-                        target="_blank"
-                        class="contact-link">
-                            Мы на карте 2GIS
-                        </a>
-
-                    </p>
+                    <ul>
+                        <li>г. Астана, пер. Талапкерский 26/1</li>
+                        <li><a href="tel:+77759264291" class="footer-link">+7 775 926 4291</a></li>
+                        <li><a href="https://2gis.kz/astana/geo/70000001106094403" target="_blank" class="footer-link">Мы на карте →</a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Арасан. Все права защищены.</p>
-            </div>
         </div>
-    </footer>
+
+        <!-- Нижняя часть футера -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 NordTel. Все права защищены.</p>
+        </div>
+    </div>
+</footer>
+
 </body>
+
 </html>
